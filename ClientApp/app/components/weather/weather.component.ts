@@ -1,4 +1,5 @@
 ﻿import { Component } from '@angular/core';
+import { Http } from '@angular/http';
 
 @Component({
     selector: 'weather',
@@ -7,8 +8,10 @@
 export class WeatherComponent {
     public weather: Weather;
 
-    constructor() {
-        this.weather = { temp: "12", summary: "Barmy", city: "London" };
+    constructor(http: Http) {
+        http.get('/api/weather/city/London').subscribe(result => {
+            this.weather = result.json();
+        });
     }
 }
 

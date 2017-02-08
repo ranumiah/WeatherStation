@@ -18,6 +18,11 @@
                     </a>
                 </li>
                 <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/weather']">
+                        <span class='glyphicon glyphicon-globe'></span> Weather
+                    </a>
+                </li>
+                <li [routerLinkActive]="['link-active']">
                     <a [routerLink]="['/counter']">
                         <span class='glyphicon glyphicon-education'></span> Counter
                     </a>
@@ -29,7 +34,7 @@
                 </li>
                 <li [routerLinkActive]="['link-active']">
                     <a [routerLink]="['/hello-world']">
-                        <span class='glyphicon glyphicon-globe'></span> Hello World
+                        <span class='glyphicon glyphicon-hand-up'></span> Hello World
                     </a>
                 </li>
             </ul>

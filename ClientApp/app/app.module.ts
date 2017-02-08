@@ -25,6 +25,7 @@ import { HelloWorldComponent } from './components/helloworld/helloworld.componen
             { path: 'home', component: HomeComponent },
             { path: 'counter', component: CounterComponent },
             { path: 'fetch-data', component: FetchDataComponent },
+            { path: 'hello-world', component: HelloWorldComponent },
             { path: '**', redirectTo: 'home' }
         ])
     ]
